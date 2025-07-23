@@ -1,7 +1,8 @@
 ## Modifications from the Original Repository
 
 - Here we use the existing Pointcept repository and add placement for custom dataset. For using the custom dataset, we just need to convert the dataset into scannet format using convert_to_scannet.py. We also need to generate the hdf5 file first by using https://github.com/msorour/MiniMarket_dataset_processing, so it's raw PCD --> hdf5 --> scannet format.
-- Since the outcome of the model training will be predictions in form of npy file, so we need to visualize it manually using the visualize_results.py or batch_visualize_results.py 
+- Since the outcome of the model training will be predictions in form of npy file, so we need to visualize it manually using the visualize_results.py or batch_visualize_results.py
+- When training, you need to use the dataset as it is. But when testing in real world PCD test set, you need to rename the val_test into val, and val into val_train, both in val folder and tasks/scenes/ folder. Otherwise you need to edit the dataset split within the configuration
 
 
 ## Start of Original Repository Guideline (updated 23-07-2025)

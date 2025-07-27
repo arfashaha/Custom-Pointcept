@@ -4,6 +4,7 @@
 - Since the outcome of the model training will be predictions in form of npy file, so we need to visualize it manually using the visualize_results.py or batch_visualize_results.py
 - When training, you need to use the dataset as it is. But when testing in real world PCD test set, you need to rename the val_test into val, and val into val_train, both in val folder and tasks/scenes/ folder. Otherwise you need to edit the dataset split within the configuration
 - For training and testing, the command is the same as explained below in the original repository readme file, just change the dataset from scannet into scannet_custom
+- For the complete experiment results and code you can download it here --> https://uoe-my.sharepoint.com/:u:/g/personal/s2737104_ed_ac_uk/ESYSvYV7R21NpRbA2TUizDEBO18reg7IkPtLMjzuxNyHhA?e=Va0sha
 
 
 ## Start of Original Repository Guideline (updated 23-07-2025)
